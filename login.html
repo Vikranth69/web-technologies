@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f3f3f3;
+        }
+
+        .form-box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 400px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-header h1 {
+            color: #333;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .input-box .input-field {
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-field:focus {
+            border-color: #4CAF50;
+        }
+
+        .input-submit {
+            text-align: center;
+        }
+
+        .submit-btn {
+            width: 100%;
+            height: 50px;
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #45a049;
+        }
+
+        .sign-up-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .sign-up-link a {
+            color: #333;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .sign-up-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <title>Sign Up | Page</title>
+</head>
+
+<body>
+    <div class="form-box">
+        <div class="form-header">
+            <h1>Sign Up</h1>
+        </div>
+        <form class="input-box" id="signupForm">
+            <input type="text" class="input-field" placeholder="Username" autocomplete="off" required>
+            <input type="email" class="input-field" placeholder="Email" autocomplete="off" required>
+            <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
+            <input type="password" class="input-field" placeholder="Confirm Password" autocomplete="off" required>
+            <div class="input-submit">
+                <button type="button" class="submit-btn" onclick="validateSignUpForm()">Sign Up</button>
+            </div>
+        </form>
+        <div class="sign-up-link">
+            <p>Already have an account? <a href="new.html">log in</a></p>
+        </div>
+    </div>
+    <script src="html.js"></script>
+</body>
+
+</html>
